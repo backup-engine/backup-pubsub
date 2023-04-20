@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "mySbMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "free-queue",
+      "connection": "FUNCTIONS_WORKER_RUNTIME"
+    }
+  ],
+  "scriptFile": "../dist/TaskConsumerFree/index.js"
+}
