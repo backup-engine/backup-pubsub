@@ -9,9 +9,14 @@
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "@azure/service-bus": "^7.9.0",
+    "@shd-nas-hotmail/backup-core": "^1.0.2",
+    "dotenv": "^16.0.3"
+  },
   "devDependencies": {
     "@azure/functions": "^3.0.0",
+    "@types/dotenv": "^8.2.0",
     "@types/node": "^16.x",
     "typescript": "^4.0.0"
   }
