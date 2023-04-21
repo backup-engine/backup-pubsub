@@ -28,7 +28,6 @@ jobs:
       - name: 'Resolve Project Dependencies Using Npm'
         shell: bash
         run: |
-          echo './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           npm ci
           npm run build --if-present
