@@ -1,15 +1,10 @@
 import { AzureFunction, Context } from "@azure/functions"
 import { ServiceBusClient } from "@azure/service-bus";
-import { config } from 'dotenv';
-
-config({
-    path: './prod.env'
-});
 
 const timerTrigger: AzureFunction = async function (context: Context, myTimer: any): Promise<void> {
 
-    const connectionString = process.env.SERVICE_BUG_CONNECTION;
-    const queueName = process.env.SERVICE_BUS_FREE_QUEUE;
+    const connectionString = 'Endpoint=sb://bk-pubsub.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SfO6nS6P+P7O5BAHjzahrVoyiI5UYDGe3+ASbCfB1cU=';
+    const queueName = 'task-queue-free';
 
     if (connectionString && queueName) {
 
