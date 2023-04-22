@@ -4,7 +4,7 @@
       "name": "mySbMsg",
       "type": "serviceBusTrigger",
       "direction": "in",
-      "queueName": "free-queue",
+      "queueName": "task-queue-free",
       "connection": "queue_connection_string"
     }
   ],
