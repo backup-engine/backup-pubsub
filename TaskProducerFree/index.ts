@@ -42,7 +42,7 @@ const timerTrigger: AzureFunction = async function (context: Context, myTimer: a
                     // if it fails to add the message to the current batch
                     // send the current batch as it is full
                     await sender.sendMessages(batch);
-                    console.log(`Sent a batch of messages to the queue: ${queueName}`);
+                    context.log(`Sent a batch of messages to the queue: ${queueName}`);
 
                     // then, create a new batch 
                     batch = await sender.createMessageBatch();
@@ -58,7 +58,7 @@ const timerTrigger: AzureFunction = async function (context: Context, myTimer: a
             // Send the last created batch of messages to the queue
             await sender.sendMessages(batch);
 
-            console.log(`Sent a batch of messages to the queue: ${queueName}`);
+            context.log(`Sent a batch of messages to the queue: ${queueName}`);
 
             // Close the sender
             await sender.close();
