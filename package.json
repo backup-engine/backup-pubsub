@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@azure/service-bus": "^7.9.0",
-    "@shd-nas-hotmail/backup-core": "^1.0.2",
+    "@backup-engine/backup-core": "1.0.4",
     "dotenv": "^16.0.3"
   },
   "devDependencies": {
