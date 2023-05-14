@@ -12,6 +12,7 @@
   "dependencies": {
     "@azure/service-bus": "^7.9.0",
     "@backup-engine/backup-core": "1.0.4",
+    "@backup-engine/backup-exe": "^1.0.0",
     "dotenv": "^16.0.3"
   },
   "devDependencies": {

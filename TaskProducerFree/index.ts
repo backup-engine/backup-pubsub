@@ -10,7 +10,6 @@ const timerTrigger: AzureFunction = async function (context: Context, myTimer: a
 
         // Create client
         const sbClient = new ServiceBusClient(connectionString);
-
         // createSender() can also be used to create a sender for a topic.
         const sender = sbClient.createSender(queueName);
 
